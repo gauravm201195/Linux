@@ -1,0 +1,133 @@
+Host-10.102.17.61
+username-user16
+password-Alph@@19
+
+unix principles
+-Kernel:Heart of operating system
+-Shell
+-File
+-Directory
+-Permission
+-Processes
+-X window system
+
+Linux is more secure than windows
+
+GPL-General Public License:Modifies software to give free source code to user
+
+Linux Features
+-Multitasking & Multi user
+-Hardware support
+-virtual memory
+-X system
+-Build-in network support
+-shared libraries
+-Memory Efficiency
+
+Advantages:Free software foundation,upgradation,forward compatibility
+
+Simple commands
+pwd-identify exact location of current directory
+ls-view contents of directory
+mkdir-create a new directory
+cd-change directory
+cp-copy file frrom one location to another
+mv-move file from one location to another
+su-change login directory
+
+BASH-Acronym for "Bourne-Again Shell"
+shell or command language interpreter for the GNU operating system
+
+CTRL+B-one position backward
+CTRL+F-one position forward
+ESC+B-one word backward
+ESC+F-one word forward
+CTRL+A-move to first character in line
+CTRL+E-move to end of line
+CTRL+U-delete current line
+CTRL+k-delete from cursor's current postion to end of line
+!!-repeat previous command
+!c-command starting with c will execute
+!n-give number that will execute
+
+UNIX Shells
+sh-bourne shell
+bash-bourne again shell
+csh-c shell
+ksh-korn shell
+tcsh-turbo c shell
+
+cat /etc/passwd-users password related file is stored here
+
+File types
+-Ordinary files:store info such as text(-)
+-Directory:does not contain real info(d)
+-Special Files:represents real physical device, types character(c) and block(b)
+-Pipes:link commands together, acts as temporary file which exists to hold data from one command until it is read by another(p)(|-symbolic link)
+
+R - used to list subdirectories
+h- used to list everything
+
+ls --help,info ls,man ls:help commands
+
+
+
+Questions
+how do you display files and directories in reverse order  ls -r
+sort ls command output based on the file extensions
+list your subdirectories recursively
+use ls to display only the file name and sizes in output   ls -s -h
+
+use ls to indicate the type of file in the output
+how do you change the output format using ls
+use ls command to hide a particular file     ls --hide FILENAME
+copy  a file (123) into a directory(123)
+copy a file(123) into a directory of another name
+
+
+
+ps -a
+ PID TTY          TIME CMD
+
+ps -au
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+
+
+Creating a particular alias(shortcut)
+ alias cl='cal'
+
+
+*-all
+?-particular 
+
+permissions-3 parts(owner,group,others)
+eg 754 file1
+read-4
+write-2
+execute-1
+owner - 7(read,write and execute)(4+2+1)
+group - 5(read and execute)(4+0+1)
+others - 4(read)(4+0+0)
+
+chmod-change permissions
+
+read bit will allow to read and list files from a directory
+write bit will allow the user to create the file ,rename and delete the file in the directory
+execute bit will allow to enter the directory,access the files and subdirectories
+sticky bit is used by administrator. The files and directories can be changed only by the owner depending on the restrictions imposed
+
+
+chmod u+w f1
+chmod go -wx dir1
+
+cp command allocates free inode number for that file
+when using mv command to move from one file to another,old inode number is removed
+
+ls -lai
+to list all details of files,symbolic and hard links
+
+ls-lL file1 
+gives detailed info about the original file
+
+grep-pattern matching command
+sed
